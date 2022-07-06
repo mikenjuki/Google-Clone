@@ -36,6 +36,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 1rem;
+    font-size: 13px;
   }
 
   .main-nav-link {
@@ -70,6 +71,14 @@ body {
     margin: 0 auto;
     padding: 5px;
     position: relative;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 .apps-list img {
