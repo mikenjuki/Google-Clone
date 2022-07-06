@@ -105,6 +105,7 @@ main {
                         "searchbar"
                        "button"
                        "language";
+    margin-bottom: 8rem;
 }
 .google-heading {
     color: var(--default_white);
@@ -123,7 +124,7 @@ main {
     display: grid;
     justify-items: center;
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     /* width:575px;
     border-radius:30px;
     border:1px solid #dcdcdc; */
@@ -149,11 +150,11 @@ main {
     padding-left: 1rem;
 }
 
-.voice {
+.voice-icon {
     height: 1.5rem;
     position: relative;
-    top: 5px;
-    left:10px;
+    bottom: 33px;
+    left: 220px;
 }
 
 .buttons {
@@ -161,8 +162,32 @@ main {
     justify-self: center;
 }
 
+.button {
+    background-color: #303134;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    /* border: 1px solid #ffffff; */
+    box-shadow: 0 0 0.5px 0.5px #ffffff;
+}
+
 .search-language {
     grid-area: language;
     justify-self: center;
     color: #ffffff;
+    font-size: 11px;
+    margin-top: 28px;
+}
+
+
+/* Footer styling begins */
+.country-name {
+    color: #ffffff;
+    /* margin: 10px; */
 }
