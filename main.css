@@ -186,13 +186,17 @@ main {
 /* Footer styling begins */
 footer {
     background: #171717;
-    padding: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
     margin-bottom: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .country-name {
     color: #ffffff;
-    margin: 0 0 6px 28px;
+    margin: 0 0 6px 20px;
 
 }
 
@@ -202,8 +206,50 @@ footer {
 }
 
 hr {
-        border: 0;
-        height: 1px;
-        background: #333;
-        /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+    border: 0;
+    height: 1px;
+    background: #333;
+    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.left-footer-links {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.center-footer-link {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+} 
+
+
+.right-footer-links {
+    display: grid;
+    padding: 0;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footer-links a {
+    color: var(--default_white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    border: 1px solid var(--BGdark);
+}
+
+.footer-links a:hover {
+    border-bottom: 1px solid var(--default_white);
+    margin-top: 0;
 }
