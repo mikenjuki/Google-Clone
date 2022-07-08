@@ -4,6 +4,7 @@
 :root {
     --BGdark: #202124;
     --default_white: #ffffff;
+    --FooterBlack: #171717;
   }
 
 * {
@@ -185,7 +186,7 @@ main {
 
 /* Footer styling begins */
 footer {
-    background: #171717;
+    background: var(--FooterBlack);
     padding: 10px 5px 10px 5px;
     margin-bottom: 0;
     position: fixed;
@@ -225,6 +226,7 @@ hr {
     justify-content: center;
     justify-content: space-evenly;
     padding-top: 10px;
+    padding-bottom: 0;
 }
 
 .center-footer-link {
@@ -234,6 +236,11 @@ hr {
     padding-top: 10px;
 } 
 
+.center-footer-link img {
+    height: 1.5rem;
+    position: relative;
+    top: 5px;
+}
 
 .right-footer-links {
     display: grid;
@@ -252,7 +259,7 @@ hr {
     text-decoration: none;
     font-size: 14px;
     font-weight: 200;
-    border: 1px solid var(--BGdark);
+    border-bottom: 1px solid var(--FooterBlack);
 }
 
 .footer-links a:hover {
